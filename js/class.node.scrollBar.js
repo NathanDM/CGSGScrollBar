@@ -63,10 +63,10 @@ var CGSGNodeScrollBarHandle = CGSGNode.extend({
      */
     render: function (context) {
 
-        this.handleWidth = Math.min(this._parentNode.getHeight(), this._parentNode.getWidth()) * 2;
+        this.handleWidth = Math.min(this._parentNode.getHeight(), this._parentNode.getWidth());
 
         context.strokeStyle = this.color;
-        context.rect(0,0, this.handleWidth, this.handleWidth / 2);
+        context.rect(0,0, this.handleWidth, this.handleWidth);
         context.stroke();
 
     }
