@@ -22,19 +22,12 @@ var CGMain = CGSGView.extend(
          */
         createScene : function() {
 
-            var i,
-                itemSize = 40,
-                padding = 5,
-                column = 11,
-                core = new CGSGNodeSquare(0, 0, 500, 500),
-                item;
-
             //create and add a root node to the scene, with arbitrary dimension
             this.rootNode = new CGSGNode(0, 0);
             CGSG.sceneGraph.addNode(this.rootNode, null);
 
             //Build hte scrollPane
-            this.viewport = new CGSGNodeScrollBar(15, 15, 200, 20);
+            this.viewport = new CGSGNodeScrollBar(30, 30, 20, 200);
 
             this.rootNode.addChild(this.viewport);
 
